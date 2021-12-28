@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./images/favIcon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>KIDS</title>
+
+
+
+
+
+
+    <style>
+        /* ////////////  DIV 1///////// */
+
+        .butnclr {
+            background-color: black;
+            border: 3px dotted wheat;
+        }
+
+        .dropdownhover a:hover {
+            background-color: rgb(202, 41, 41);
+            color: wheat;
+            font-weight: bolder;
+        }
+
+        .dropdownhover a:active {
+            background-color: rgb(0, 0, 0);
+            color: wheat;
+        }
+
+        /* ////////////  DIV 2///////// */
+
+        #mainbox {
+            font-size: 24px;
+            cursor: pointer;
+            transition: all .6s;
+        }
+
+        .sidemenu {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 0px;
+            background-color: #222;
+            z-index: 1;
+            padding-top: 100px;
+            overflow-x: hidden;
+            transition: all .5s;
+        }
+
+        .sidemenu a {
+            padding: 8px 8px 8px 64px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #999;
+            display: block;
+        }
+
+        .sidemenu a:hover {
+            color: white;
+        }
+
+        .sidemenu .closebtn {
+            position: absolute;
+            top: 0px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 32px;
+        }
+
+
+        /* ////////////  DIV 3///////// */
+
+        .div2 {
+            background-image: linear-gradient(to top, #181b19 0%, #e2e0aa 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .first {
+            background-color: black;
+            color: white;
+        }
+
+        .multiClr {
+
+            font-size: 72px;
+            background: -webkit-linear-gradient(rgb(143, 117, 190), rgb(212, 43, 43));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .heroCyc {
+            font-size: 52px;
+            font-weight: bolder;
+            background: -webkit-linear-gradient(rgb(149, 223, 29), rgb(212, 43, 43));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+    <!-- ////////////  DIV 1/////////  -->
+
+
+    <ul class="nav justify-content-end first">
+
+        <!-- Example split danger button -->
+        <div class="btn-group">
+
+            <button type="button" class="btn btn-danger butnclr"> <i class="fa fa-user"></i> MY ACCOUNT</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split butnclr"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu dropdownhover">
+                <a class="dropdown-item " href="./login.html" target="_blank">LOGIN</a>
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item " href="./signup.html" target="_blank">SIGN UP</a>
+            </div>
+        </div>
+
+    </ul>
+
+    <!-- /* ////////////  DIV 2///////// */ -->
+
+
+    <div id="mainbox" onclick="openFunction()">&#9776; <h3 class="logo">Imran<span>& Company</span></h3>
+    </div>
+    <div id="menu" class="sidemenu">
+        <a href="./index.html" target="_blank">HOME</a>
+        <a href="./accesories.html" target="_blank">ACCESSORIES</a>
+        <a href="./kids.html" target="_blank">KIDS</a>
+        <a href="./boygrl.html" target="_blank">BOY/ GIRL</a>
+        <a href="./adult.html" target="_blank">ADULTS</a>
+        <a href="./contact.html" target="_blank">CONTACT</a>
+
+        <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+    </div>
+
+
+
+
+    <!-- /* ////////////  DIV 3///////// */ -->
+
+    <div class="div3">
+        <h3 class="three">Pakistan’s Biggest Online Cycling Store</h3>
+    </div>
+
+    <!-- /* ////////////  DIV 4///////// */ -->
+
+    <div id="carouselExampleIndicators" class="carousel slide poin" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/kidsslider4.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/kidsslider1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/kidsslider2.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- /* ////////////  DIV 5///////// */ -->
+
+
+    <div class="adult pt-2">
+        <h3><i class="fa fa-child"></i> KIDS</h3>
+    </div>
+
+
+    <!-- /* ////////////  DIV 6///// CARDS//// */ -->
+
+    <div class="container text-center">
+        <h1 class="heroCyc three">PRODUCTS CARDS</h1>
+      
+    </div>
+
+
+
+
+    <div class="shell">
+        <div class="container ">
+            <div class="row ">
+
+                <div class="col-md-3 ">
+                    <div class="wsk-cp-product bowr">
+                        <div class="wsk-cp-img">
+                            <img src="./images/Kids/c6.webp" alt="Product" class="img-responsive" />
+
+                            <img src="./images/Kids/c06.jpg" alt="Product" class="img-responsive" />
+                        </div>
+                        <div class="wsk-cp-text">
+                            <div class="category">
+                                <button class="btnMor">DETAILS</button>
+                            </div>
+                            <div class="title-product">
+                                <h3 class="multiClr">DORAEMON SERIES</h3>
+                            </div>
+                            <div class="description-prod">
+                                <h6>DORAEMON LET'S TRAVEL 16T</h6>
+                            </div>
+                            <div class="card-footer">
+                                <div class="wcf-left"><span class="price">Rs: 15000.000</span></div>
+                                <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                            class="fa fa-shopping-cart"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="wsk-cp-product bowr">
+                        <div class="wsk-cp-img"><img src="./images/Kids/c11.jpeg" alt="Product"
+                                class="img-responsive" />
+
+                            <img src="./images/Kids/c011.jpg" alt="Product" class="img-responsive" />
+                        </div>
+                        <div class="wsk-cp-text">
+                            <div class="category">
+                                <button class="btnMor">DETAILS</button>
+                            </div>
+                            <div class="title-product">
+                                <h3 class="multiClr">DORAEMON SERIES</h3>
+                            </div>
+                            <div class="description-prod">
+                                <h6>DORAEMON FLOWER POWER 14T</h6>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="wcf-left"><span class="price">Rs: 18000.000</span></div>
+                                <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                            class="fa fa-shopping-cart"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="wsk-cp-product bowr">
+                        <div class="wsk-cp-img"><img src="./images/Kids/c12.jpg" alt="Product" class="img-responsive" />
+
+                            <img src="./images/Kids/c012.jpeg" alt="Product" class="img-responsive" />
+                        </div>
+                        <div class="wsk-cp-text">
+                            <div class="category">
+                                <button class="btnMor">DETAILS</button>
+                            </div>
+                            <div class="title-product">
+                                <h3 class="multiClr">DORAEMON SERIES</h3>
+                            </div>
+                            <div class="description-prod">
+                                <h6>DORAEMON RACE ON 20T
+                                </h6>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="wcf-left"><span class="price">Rs: 14000.000</span></div>
+                                <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                            class="fa fa-shopping-cart"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="wsk-cp-product bowr">
+                        <div class="wsk-cp-img"><img src="./images/Kids/c13.jpeg" alt="Product"
+                                class="img-responsive" />
+
+                            <img src="./images/Kids/c013.jpg" alt="Product" class="img-responsive" />
+                        </div>
+                        <div class="wsk-cp-text">
+                            <div class="category">
+                                <button class="btnMor">DETAILS</button>
+                            </div>
+                            <div class="title-product">
+                                <h3 class="multiClr">DORAEMON SERIES
+
+                                </h3>
+                            </div>
+                            <div class="description-prod">
+                                <h6>DORAEMON BLOSSOM 20T</h6>
+                            </div>
+                            <div class="card-footer">
+                                <div class="wcf-left"><span class="price">Rs: 11000.000</span></div>
+                                <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                            class="fa fa-shopping-cart"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ///////////////////////////////////////////////DIV 7////////////////////////////////// -->
+
+
+
+    <div class="shell">
+        <div class="container ">
+            <div class="row ">
+
+                <div class="col-md-3 ">
+                    <div class="wsk-cp-product bowr">
+                        <div class="wsk-cp-img">
+                            <img src="./images/Kids/c1.png" alt="Product" class="img-responsive" />
+
+                            <img src="./images/Kids/c01.png" alt="Product" class="img-responsive" />
+                        </div>
+                        <div class="wsk-cp-text">
+                            <div class="category">
+                                <button class="btnMor">DETAILS</button>
+                            </div>
+                            <div class="title-product">
+                                <h3 class="multiClr">GIRLS</h3>
+                            </div>
+                            <div class="description-prod">
+                                <h6>DAISY 20T</h6>
+                            </div>
+                            <div class="card-footer">
+                                <div class="wcf-left"><span class="price">Rs: 15000.000</span></div>
+                                <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                            class="fa fa-shopping-cart"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="wsk-cp-product bowr">
+                        <div class="wsk-cp-img"><img src="./images/Kids/c2.png" alt="Product" class="img-responsive" />
+
+                            <img src="./images/Kids/c02.png" alt="Product" class="img-responsive" />
+                        </div>
+                        <div class="wsk-cp-text">
+                            <div class="category">
+                                <button class="btnMor">DETAILS</button>
+                            </div>
+                            <div class="title-product">
+                                <h3 class="multiClr">GIRLS</h3>
+                            </div>
+                            <div class="description-prod">
+                                <h6>FAIRY 12T</h6>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="wcf-left"><span class="price">Rs: 18000.000</span></div>
+                                <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                            class="fa fa-shopping-cart"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="wsk-cp-product bowr">
+                        <div class="wsk-cp-img"><img src="./images/Kids/c3.png" alt="Product" class="img-responsive" />
+
+                            <img src="./images/Kids/c03.png" alt="Product" class="img-responsive" />
+                        </div>
+                        <div class="wsk-cp-text">
+                            <div class="category">
+                                <button class="btnMor">DETAILS</button>
+                            </div>
+                            <div class="title-product">
+                                <h3 class="multiClr">GIRLS</h3>
+                            </div>
+                            <div class="description-prod">
+                                <h6>MINNIE IGT
+                                </h6>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="wcf-left"><span class="price">Rs: 14000.000</span></div>
+                                <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                            class="fa fa-shopping-cart"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="wsk-cp-product bowr">
+                        <div class="wsk-cp-img"><img src="./images/Kids/C4.png" alt="Product" class="img-responsive" />
+
+                            <img src="./images/Kids/c04.png" alt="Product" class="img-responsive" />
+                        </div>
+                        <div class="wsk-cp-text">
+                            <div class="category">
+                                <button class="btnMor">DETAILS</button>
+                            </div>
+                            <div class="title-product">
+                                <h3 class="multiClr">GIRLS
+
+                                </h3>
+                            </div>
+                            <div class="description-prod">
+                                <h6>SWIRL 18T (EVA TYRES)</h6>
+                            </div>
+                            <div class="card-footer">
+                                <div class="wcf-left"><span class="price">Rs: 11000.000</span></div>
+                                <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                            class="fa fa-shopping-cart"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ///////////////////////////////////////////////DIV 8////////////////////////////////// -->
+
+
+
+    <div class="shell">
+        <div class="container ">
+            <div class="row ">
+
+                <div class="col-md-3 ">
+                    <div class="wsk-cp-product bowr">
+                        <div class="wsk-cp-img">
+                            <img src="./images/Kids/c10.png" alt="Product" class="img-responsive" />
+
+                            <img src="./images/Kids/c010.png" alt="Product" class="img-responsive" />
+                        </div>
+                        <div class="wsk-cp-text">
+                            <div class="category">
+                                <button class="btnMor">DETAILS</button>
+                            </div>
+                            <div class="title-product">
+                                <h3 class="multiClr">BOYS</h3>
+                            </div>
+                            <div class="description-prod">
+                                <h6>SUNDANCER 20T (EVA TIRES)</h6>
+                            </div>
+                            <div class="card-footer">
+                                <div class="wcf-left"><span class="price">Rs: 15000.000</span></div>
+                                <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                            class="fa fa-shopping-cart"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="wsk-cp-product bowr">
+                        <div class="wsk-cp-img"><img src="./images/Kids/c5.webp" alt="Product" class="img-responsive" />
+
+                            <img src="./images/Kids/c05.webp" alt="Product" class="img-responsive" />
+                        </div>
+                        <div class="wsk-cp-text">
+                            <div class="category">
+                                <button class="btnMor">DETAILS</button>
+                            </div>
+                            <div class="title-product">
+                                <h3 class="multiClr">BOYS</h3>
+                            </div>
+                            <div class="description-prod">
+                                <h6>HOPER 20T 6S FS DD</h6>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="wcf-left"><span class="price">Rs: 18000.000</span></div>
+                                <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                            class="fa fa-shopping-cart"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="wsk-cp-product bowr">
+                        <div class="wsk-cp-img"><img src="./images/Kids/c9.png" alt="Product" class="img-responsive" />
+
+                            <img src="./images/Kids/c09.png" alt="Product" class="img-responsive" />
+                        </div>
+                        <div class="wsk-cp-text">
+                            <div class="category">
+                                <button class="btnMor">DETAILS</button>
+                            </div>
+                            <div class="title-product">
+                                <h3 class="multiClr">BOYS</h3>
+                            </div>
+                            <div class="description-prod">
+                                <h6>SUNDANCER 16T (EVA TIRES)
+                                </h6>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="wcf-left"><span class="price">Rs: 14000.000</span></div>
+                                <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                            class="fa fa-shopping-cart"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="wsk-cp-product bowr">
+                        <div class="wsk-cp-img"><img src="./images/Kids/c8.png" alt="Product" class="img-responsive" />
+
+                            <img src="./images/Kids/c08.png" alt="Product" class="img-responsive" />
+                        </div>
+                        <div class="wsk-cp-text">
+                            <div class="category">
+                                <button class="btnMor">DETAILS</button>
+                            </div>
+                            <div class="title-product">
+                                <h3 class="multiClr">BOYS
+
+                                </h3>
+                            </div>
+                            <div class="description-prod">
+                                <h6>CARTOON 14T (EVA TYRES)
+                                </h6>
+                            </div>
+                            <div class="card-footer">
+                                <div class="wcf-left"><span class="price">Rs: 11000.000</span></div>
+                                <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                            class="fa fa-shopping-cart"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ///////////////////////////////////////////////DIV 9////////////////////////////////// -->
+
+
+
+
+
+    <div class="shell">
+        <div class="container">
+            <div class="row">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="wsk-cp-product bowr">
+                            <div class="wsk-cp-img">
+                                <img src="./images/Kids/big.png" alt="Product" class="img-responsive" />
+                            </div>
+                            <div class="wsk-cp-text">
+                                <div class="category">
+                                    <button class="btnMor">DETAILS</button>
+                                </div>
+                                <div class="title-product">
+                                    <h4 class="heroCyc">HERO LECTRO E-CYCLES</h4>
+                                </div>
+                                <div class="description-prod">
+                                    <p>
+                                    <ul>
+                                        <li>Detachable battery </li>
+                                        <li>Highlights</li>
+                                        <li>Bluetooth & USB Connect</li>
+                                        <li>7 speed gears</li>
+                                        <li>Upto 60 km in one charge</li>
+
+                                    </ul>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Rs: 450500.000</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                                class="fa fa-shopping-cart"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div class="wsk-cp-product bowr">
+                            <div class="wsk-cp-img"><img src="./images/Kids/c11.jpeg" alt="Product"
+                                    class="img-responsive" />
+
+                                <img src="./images/Kids/c011.jpg" alt="Product" class="img-responsive" />
+                            </div>
+                            <div class="wsk-cp-text">
+                                <div class="category">
+                                    <button class="btnMor">DETAILS</button>
+                                </div>
+                                <div class="title-product">
+                                    <h3 class="multiClr">PRODUCTS</h3>
+                                </div>
+                                <div class="description-prod">
+                                    <h6>SUNDANCER 16T (EVA TIRES)
+                                    </h6>
+
+                                </div>
+                                <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Rs: 14000.000</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                                class="fa fa-shopping-cart"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div class="wsk-cp-product bowr">
+                            <div class="wsk-cp-img"><img src="./images/Kids/c12.jpg" alt="Product"
+                                    class="img-responsive" />
+
+                                <img src="./images/Kids/c012.jpeg" alt="Product" class="img-responsive" />
+                            </div>
+                            <div class="wsk-cp-text">
+                                <div class="category">
+                                    <button class="btnMor">DETAILS</button>
+                                </div>
+                                <div class="title-product">
+                                    <h3 class="multiClr">PRODUCTS</h3>
+                                </div>
+                                <div class="description-prod">
+                                    <h6>SUNDANCER 16T (EVA TIRES)
+                                    </h6>
+
+                                </div>
+                                <div class="card-footer">
+                                    <div class="wcf-left"><span class="price">Rs: 14000.000</span></div>
+                                    <div class="wcf-right"><a href="#" class="buy-btn"><i
+                                                class="fa fa-shopping-cart"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+</div>
+
+  <!-- //////////////////////////////PAGINATION///////////////////////// -->
+
+
+  <nav aria-label="Page navigation example ">
+    <ul class="pagination justify-content-center pageBordr">
+      <li class="page-item  pageBo ">
+        <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item pageBori">
+        <a class="page-link " href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+<!-- ///////////////////////////////////////////////////////////////////////FOOTER////////////////////////////// -->
+		<!-- The content of your page would go here. -->
+
+		<footer class="footer-distributed">
+
+
+
+			<div class="footer-left">
+          
+				<h3>IMRAN &<span>COMPANY</span></h3>
+
+				<p class="footer-links">
+					<a href="./index.html">HOME</a>
+					|
+					<a href="./kids.html">KIDS</a>
+					|
+					<a href="./adult.html">ADULTS</a>
+					|
+					<a href="./boygrl.html">BOY/GIRL</a>
+                    |
+					<a href="./accesories.html">ACCESSORIES</a>
+                    |
+					<a href="./bikesize.html">BIKE SIZES</a>
+				</p>
+
+				<p class="footer-company-name">© 2021 IMRAN& COMPANY Pvt. Ltd.</p>
+			</div>
+
+
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>309 - Rupa Solitaire,
+						 Bldg. No. A - 1, Sector - 1</span>
+						</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+92-3172645007</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:muhammadimranqureshi107@gmail.com">muhammadimranqureshi107@gmail.com</a></p>
+				</div>
+			</div>
+
+
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Imran & Company is Pakistan’s biggest online cycling store offering range of Kids
+                                BiCycles, Road Bikes, Mountain Bikes, Motor Bikes Touring Bikes, Hybrid Bikes, Sports
+                                Bikes, BMX Bicycles, TriCycles, Cycling Accessories etc..</p>
+				<div class="footer-icons">
+					<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook footFB" ></i></a>
+					<a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter footTW"></i></a>
+					<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram footIN"></i></a>
+					<a href="https://www.whatsApp.com" target="_blank"><i class="fa fa-whatsapp footWA"></i></a>
+					<a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube footYT"></i></a>
+					<a href="https://www.youtube.com" target="_blank"><i class="fa fa-phone footPH"></i></a>
+                    
+				</div>
+			</div>
+		</footer>
+</body>
+
+
+
+<script src="./app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+
+</html>
